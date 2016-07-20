@@ -1,0 +1,3 @@
+[console_scripts]
+idash = idash.cli:main
+

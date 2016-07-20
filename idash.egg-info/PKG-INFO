@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: idash
+Version: 0.1.0
+Summary: Generate Implementation Dashboard from projects in Asana
+Home-page: UNKNOWN
+Author: Sarah Dandia
+Author-email: sarah@1docway.com
+License: BSD
+Description: 
+        Build the Implementation Dashboard from projects and tasks in Asana
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

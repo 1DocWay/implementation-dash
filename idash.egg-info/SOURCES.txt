@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+idash/__init__.py
+idash/cli.py
+idash.egg-info/PKG-INFO
+idash.egg-info/SOURCES.txt
+idash.egg-info/dependency_links.txt
+idash.egg-info/entry_points.txt
+idash.egg-info/not-zip-safe
+idash.egg-info/requires.txt
+idash.egg-info/top_level.txt

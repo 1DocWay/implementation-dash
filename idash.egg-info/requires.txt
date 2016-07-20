@@ -1,0 +1,5 @@
+click
+openpyxl
+termcolor
+requests
+tqdm
