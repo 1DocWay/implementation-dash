@@ -27,7 +27,7 @@ To use it:
     
     Arguments (Required):
     
-        TOKEN_FILE      TEXT    Specify a filename for your Asana Personal Access Token as "filename.txt"
+        TOKEN_FILE              Specify a filename for your Asana Personal Access Token as "filename.txt"
     
     Options:
         
