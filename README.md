@@ -23,7 +23,7 @@ This command will find and install all the Python packages needed for the script
 
 To use it:
 
-    $ idash [Options] TOKEN_FILE
+    $ idash TOKEN_FILE [Options] 
     
     Arguments (Required):
     
@@ -43,3 +43,18 @@ To use it:
         
         --help                  Show this message and exit.
 
+# Running in Strict Mode
+
+Strict Mode allows strict matching for task names - this means that task names will be matched against the template tasks using the entirety of the name, and must be an *exact* match. For example, the following would be a match:
+
+- Template Task Name: “Hand-off from Implementation to Account Management”
+- Project Task Name: “Hand-off from Implementation to Account Management”
+
+The default matching (not in Strict Mode) is by the task prefix as specified in between brackets at the beginning of the task name. For example, the following would be a match:
+
+- Template Task Name: “[5A] Hand-off from Implementation" 
+- Project Task Name: “[5A] Hand-off to Account Management”
+
+You can use older templates (that do not use the task prefixing) to generate the Implementation Dashboard spreadsheet, by specifying the template name using the `-t` option, and specifying Strict Mode via the `-s` option. For example:
+
+    $ idash token.txt -t "[TEMPLATE] Implementation Task List" -s
