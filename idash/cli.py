@@ -71,6 +71,7 @@ SUMMARY_SHEETS = [
 BOLD_FONT = Font(bold=True, name='Arial', size=11)
 REG_FONT = Font(bold=False, name='Arial', size=11)
 GRAY_FONT = Font(bold=False, name='Arial', size=11, color='EDEDED')
+RED_FONT = Font(bold=False, name='Arial', size=11, color='FF0000')
 
 #Global variables
 template = None
@@ -110,22 +111,22 @@ def main(write, template, strict, token_file):
 def readTokenFile(token_file):
     global token
     try:
-  		f = open(token_file, 'r')
-  		token = f.readline()
+        f = open(token_file, 'r')
+        token = f.readline()
     except:
-  		error('Unable to open token file. Please check the path and include the file extension.')
-  		sys.exit(1)
+        error('Unable to open token file. Please check the path and include the file extension.')
+        sys.exit(1)
     if not token:
-  		error('Unable to read token from file.')
-  		sys.exit(1)
+        error('Unable to read token from file.')
+        sys.exit(1)
 
 def readTemplateSheet():
 	global wb
 	try:
-		wb = openpyxl.load_workbook(TEMPLATE_SHEET_FN)
+        wb = openpyxl.load_workbook(TEMPLATE_SHEET_FN)
 	except:
-		error('Unable to read template spreadsheet')
-		sys.exit(1)
+        error('Unable to read template spreadsheet')
+        sys.exit(1)
 
 def getProjects():
     global projects
@@ -201,7 +202,9 @@ def writeProjectSheet(project, tasks):
     start_date = findTaskString(tasks, '[0] Metadata:', 'name', '[0A] ')
     go_live_date = findTaskString(tasks, '[0] Metadata:', 'name', '[0B] ')
     sheet['B1'] = start_date if start_date else DEFAULT_START_DATE
+    if not start_date: sheet['B1'].font = RED_FONT 
     sheet['B2'] = go_live_date if go_live_date else DEFAULT_GO_LIVE_DATE
+    if not go_live_date: sheet['B2'].font = RED_FONT
     sheet['C1'] = project['name']
     if '[0] Metadata:' in tasks: del tasks['[0] Metadata:']
     row = 2
