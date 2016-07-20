@@ -1,6 +1,6 @@
 # iDash
 
-Generate the Implementation Dashboard from projects and tasks in Asana
+A command line tool that generates the Implementation Dashboard spreadsheet from projects and tasks in Asana.
 
 
 # Installation
@@ -43,7 +43,7 @@ To use it:
         
         --help                  Show this message and exit.
 
-# Running in Strict Mode
+### Running in Strict Mode
 
 Strict Mode allows strict matching for task names - this means that task names will be matched against the template tasks using the entirety of the name, and must be an *exact* match. For example, the following would be a match:
 
