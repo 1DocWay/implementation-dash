@@ -42,7 +42,8 @@ Note that only the token file is a required argument. Other options are explaine
     
     Arguments (Required):
     
-        TOKEN_FILE              Specify a filename for your Asana Personal Access Token as "filename.txt"
+        TOKEN_FILE              Specify the filename for the text file that contains your Asana Personal 
+                                Access Token as "filename.txt"
     
     Options:
         
