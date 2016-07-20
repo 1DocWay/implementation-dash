@@ -121,10 +121,10 @@ def readTokenFile(token_file):
         sys.exit(1)
 
 def readTemplateSheet():
-	global wb
-	try:
+    global wb
+    try:
         wb = openpyxl.load_workbook(TEMPLATE_SHEET_FN)
-	except:
+    except:
         error('Unable to read template spreadsheet')
         sys.exit(1)
 
