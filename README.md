@@ -30,7 +30,7 @@ You will need a Personal Access Token to run the script. This token serves as yo
 3. Click on "Manage Developer Apps"
 4. You will see a section called "Personal Access Tokens". Click on "Create a New Personal Access Token".
 5. Fill in a description for the token, and hit "Create". You will be given a token to copy and paste. Note that you will not be shown this token again. 
-6. Copy and paste the token into a new text file. Save this file in the same directory as the script. Make sure to use the file extension ".txt".
+6. Copy and paste the token into a new text file. Save this file in the root directory of this project. Make sure to use the file extension ".txt".
 
 ### Running the script
 
