@@ -21,9 +21,24 @@ This command will find and install all the Python packages needed for the script
 
 # Usage
 
-To use it:
+### Create a Personal Access Token in Asana
+
+You will need a Personal Access Token to run the script. This token serves as your authentication to retrieve projects and tasks from the Asana API. To create a token:
+
+1. Log into Asana
+2. Navigate to "My Profile Settings", and then switch over to the tab "Apps".
+3. Click on "Manage Developer Apps"
+4. You will see a section called "Personal Access Tokens". Click on "Create a New Personal Access Token".
+5. Fill in a description for the token, and hit "Create". You will be given a token to copy and paste. Note that you will not be shown this token again. 
+6. Copy and paste the token into a new text file. Save this file in the same directory as the script. Make sure to use the file extension ".txt".
+
+### Running the script
+
+You can run the script via the following command:
 
     $ idash TOKEN_FILE [Options] 
+
+Note that only the token file is a required argument. Other options are explained below:
     
     Arguments (Required):
     
