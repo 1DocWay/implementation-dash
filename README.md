@@ -7,11 +7,15 @@ A command line tool that generates the Implementation Dashboard spreadsheet from
 
 Check to see if you have Pip installed on your system. You can test this by running:
 
-    $ pip -v
+    $ pip -V
 
-If the command is not recognized, you do not have Pip. Pip generally comes bundled with a Python install. To install Python, including Pip and other setup tools: https://www.python.org/downloads/ 
+If the command is not recognized, you do not have Pip. Pip generally comes bundled with a Python install. To install Python, including Pip and other setup tools: https://www.python.org/downloads/. **Install Python version 2.7.12**.
 
-Once pip has been installed, clone this repository to your desktop, then navigate to the root directory. 
+You may need to upgrade your Pip version. **Please use Pip version 8.1.2**. To upgrade, run the command:
+
+    $ pip install --upgrade pip
+
+Once Pip has been installed, clone this repository to your desktop, then navigate to the root directory. 
 
 Simply run:
 
