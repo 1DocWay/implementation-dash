@@ -3,7 +3,8 @@ Build the Implementation Dashboard from projects and tasks in Asana
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click==6.6', 'openpyxl==2.4.0b1', 'termcolor', 'requests', 'tqdm']
+dependencies = ['click==6.6', 'openpyxl==2.4.0b1', 'termcolor', 'requests', 'tqdm', 
+                'datetime', 'python-dateutil']
 
 setup(
     name='idash',

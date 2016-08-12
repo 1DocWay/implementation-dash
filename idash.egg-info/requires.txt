@@ -1,5 +1,7 @@
-click
-openpyxl
+click==6.6
+openpyxl==2.4.0b1
 termcolor
 requests
 tqdm
+datetime
+python-dateutil

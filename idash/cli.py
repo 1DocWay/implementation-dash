@@ -3,6 +3,7 @@ import openpyxl
 from openpyxl.styles import Alignment, Color, Font, fills, PatternFill
 from openpyxl.utils import get_column_letter
 import sys
+import time
 from time import sleep
 import collections
 from termcolor import colored, cprint
@@ -106,7 +107,7 @@ def main(write, template, strict, token_file):
     writeProjectData()
     filterProjectsByTemplate()
     writeSummarySheets()
-    saveFinalSheet()
+    saveFinalSheet(write)
 
 def readTokenFile(token_file):
     global token
@@ -352,8 +353,9 @@ def findTaskString(tasks, section, task_attr, prefix):
     if task: return task[task_attr].split(prefix)[1]
     return None
 
-def saveFinalSheet():
+def saveFinalSheet(customFilename):
+    filename = OUTPUT_SHEET_FN if customFilename else time.strftime("%m-%d-%y-%I-%M%p-") + OUTPUT_SHEET_FN 
     wb.remove_sheet(wb.get_sheet_by_name(PROJECT_TEMPLATE_TAB))
     info('Saving Spreadsheet...')
-    wb.save(OUTPUT_SHEET_FN)
-    success('Successfully saved ' + OUTPUT_SHEET_FN + '!')
+    wb.save(filename)
+    success('Successfully saved ' + filename + '!')
