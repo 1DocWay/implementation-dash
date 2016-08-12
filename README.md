@@ -52,7 +52,9 @@ Note that only the token file is a required argument. Other options are explaine
     Options:
         
         -w, --write     TEXT    Specify a filename for the output spreadsheet as "Filename.xlsx".
-                                By default, the output spreadsheet is "Implementation_Dashboard.xlsx".
+                                By default, the output spreadsheet is 
+                                "DATE-TIME-Implementation_Dashboard.xlsx", 
+                                where DATE-TIME is the current date and time.
         
         -t, --template  TEXT    Specify the name of the Template Task List to retrieve from Asana as 
                                 "[TEMPLATE] Template Name". The default template is "[TEMPLATE] Outpatient 
