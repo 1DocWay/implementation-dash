@@ -80,3 +80,18 @@ The default matching (not in Strict Mode) is by the task prefix as specified in 
 You can use older templates (that do not use the task prefixing) to generate the Implementation Dashboard spreadsheet, by specifying the template name using the `-t` option, and specifying Strict Mode via the `-s` option. For example:
 
     $ idash token.txt -t "[TEMPLATE] Implementation Task List" -s
+
+### Asana Template Usage
+#### Metadata Section
+The following "tasks" in the Metadata section should be changed accordingly:
+* Implementation Start Date task example:
+  * [0A] 09/10/2016
+* Go-Live Target Date task example:
+  * [0B] 12/10/2016
+* Template specification (for different Templates) example:
+  * [0C] Outpatient Services
+
+#### Actual Completed Start Date subtask
+For every task that is completed you may create a "Actual Completed Start Date" subtask when the checked-off date in Asana does not represent the true completion date of the task. 
+* Example: Actual Completed Date: xx/xx/xxxx
+
